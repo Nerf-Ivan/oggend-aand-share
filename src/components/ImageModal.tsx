@@ -71,14 +71,14 @@ export const ImageModal = ({ image, open, onOpenChange }: ImageModalProps) => {
           />
         </div>
 
-        <div className="p-4 bg-card">
+        <div className="p-4 bg-card border-t border-border">
           <Button
             onClick={handleShare}
-            className="w-full bg-gradient-morning hover:opacity-90 transition-opacity"
+            className="w-full bg-gradient-morning hover:opacity-90 transition-opacity font-bold uppercase tracking-wide"
             size="lg"
           >
             <Share2 className="w-5 h-5 mr-2" />
-            Deel Boodskap
+            Deel
           </Button>
         </div>
       </DialogContent>

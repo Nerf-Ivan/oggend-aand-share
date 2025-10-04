@@ -7,11 +7,11 @@ interface ImageGridProps {
 
 export const ImageGrid = ({ images, onImageClick }: ImageGridProps) => {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 p-4 animate-fade-in">
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4 animate-fade-in">
       {images.map((image) => (
         <Card
           key={image.id}
-          className="overflow-hidden cursor-pointer hover:shadow-lg transition-all duration-300 hover:scale-105 active:scale-95"
+          className="overflow-hidden cursor-pointer hover:shadow-2xl hover:shadow-primary/20 transition-all duration-300 hover:scale-105 active:scale-95 border-border bg-card"
           onClick={() => onImageClick(image)}
         >
           <div className="aspect-square relative">
